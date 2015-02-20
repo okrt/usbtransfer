@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="main">
+    <file>images/white.png</file>
+    <file>images/format.png</file>
+    <file>images/background.png</file>
+    <file>images/download.png</file>
+    <file>images/back.png</file>
+    <file>images/buttonbg.png</file>
+    <file>images/cddvd.png</file>
+    <file>images/eject.png</file>
+    <file>images/imagebutton.png</file>
+    <file>images/isoimg.png</file>
+    <file>images/mediabutton.png</file>
+    <file>images/trans.png</file>
+    <file>images/usbbutton.png</file>
+    <file>images/usbi.png</file>
+    <file>images/usbicon.png</file>
+    <file>images/usbtransfer.ico</file>
+  </qresource>
+</RCC>

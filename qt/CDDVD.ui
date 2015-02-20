@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>340</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>340</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>USBTransfer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/main/images/usbtransfer.ico</normaloff>:/main/images/usbtransfer.ico</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>342</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/main/images/background.png);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>0</y>
+       <width>92</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>92</width>
+       <height>92</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>92</width>
+       <height>92</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/main/images/usbicon.png);
+border:none;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="versionLabel">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>300</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/main/images/trans.png);
+background-repeat:no-repeat;
+color.rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#0000ff;&quot;&gt;USBTransfer v3.0&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; - oguzkirat.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="transferlabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>221</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/main/images/trans.png);
+color: rgb(57, 57, 57);
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Transfer from CD or DVD&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="selectisolabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>63</y>
+       <width>321</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image:url(:/main/images/trans.png);
+color.rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Select your image and USB drive.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Btn_cddvdStart">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>277</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>277</width>
+       <height>44</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>277</width>
+       <height>44</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-image: url(:/main/images/cddvd.png);
+</string>
+     </property>
+     <property name="text">
+      <string>Start Copying</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Btn_download">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>250</y>
+       <width>277</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>277</width>
+       <height>44</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>277</width>
+       <height>44</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-image: url(:/main/images/download.png);
+</string>
+     </property>
+     <property name="text">
+      <string>Download a distribution image</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Btn_Back">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>10</y>
+       <width>30</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/main/images/back.png);
+border:none;
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="cdvdlabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>4</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 26pt &quot;Myriad Pro&quot;;
+background-image:url(:/main/images/trans.png);
+color: rgb(57, 57, 57);</string>
+     </property>
+     <property name="text">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Myriad Pro'; font-size:26pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CD or DVD&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectDVDButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>90</y>
+       <width>175</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-image: url(:/main/images/mediabutton.png)
+</string>
+     </property>
+     <property name="text">
+      <string>Select DVD Drive</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selectUSBButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>140</y>
+       <width>175</width>
+       <height>44</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>7</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background-image: url(:/main/images/usbbutton.png)
+</string>
+     </property>
+     <property name="text">
+      <string>Select USB Drive</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Btn_Eject">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/main/images/eject.png);
+border:none;
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
